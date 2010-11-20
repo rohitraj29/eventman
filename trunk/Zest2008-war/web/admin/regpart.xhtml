@@ -1,0 +1,55 @@
+
+<ui:composition xmlns="http://www.w3.org/1999/xhtml" 
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:a4j="http://richfaces.org/a4j"
+                xmlns:rich="http://richfaces.org/rich">
+    
+    <rich:panel header="Register Participants">
+        
+        
+        <table> 
+            <tr>
+                <td>
+                    
+                    <h:outputText value="Enter Participant name"/>
+                </td>
+                <td>
+                    <h:inputText value="#{PartRegBean.partname}"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h:outputText value="Enter Registration number"/>
+                </td>
+                <td>
+                    <h:inputText value="#{PartRegBean.partregno}"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h:outputText value="Select Participant College"/>
+                </td>
+                <td>
+                    <rich:comboBox value="#{PartRegBean.partcollege}">
+                        <f:selectItems  value="#{CollegeBean.collegelist}"/>
+                    </rich:comboBox>
+                    
+                </td>
+                
+            </tr>
+            <tr>
+                <td>
+                    <a4j:commandButton action="success" value="Register Participant" reRender="content" immediate="true" limitToList="true"/>
+                    
+                </td>
+                <td>
+                    <a4j:commandButton  value="Clear Details"reRender="content" immediate="true" limitToList="true"/>
+                </td>
+            </tr>
+        </table>
+        
+    </rich:panel>
+</ui:composition>
+
