@@ -1,0 +1,1 @@
+Managing an event may be a big deal for any organization , looking into the number of the events and the participants, the jury etc and to provide an error free decision making and judgement. the voluminous events are becoming complex day by day and hence this solution tries to solve this problem by providing a possible alternative
